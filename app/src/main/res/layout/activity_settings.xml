@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FC"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/headerBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0B3A8F"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="←"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tvSub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student"
+                android:textColor="#CFDBFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Main settings card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:tag="20">
+
+                <LinearLayout android:id="@+id/rowProfile" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:background="#1E4FD8" android:contentDescription="Profile" android:padding="10dp" android:src="@android:drawable/ic_menu_myplaces" android:tag="circle" android:tint="#FFFFFF" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:text="Profile" android:textColor="#0B2A6F" android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="#667085" android:textSize="26sp" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="68dp" android:background="#E6ECF7" />
+
+                <LinearLayout android:id="@+id/rowPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:background="#7C3AED" android:contentDescription="Change Password" android:padding="10dp" android:src="@android:drawable/ic_lock_lock" android:tag="circle" android:tint="#FFFFFF" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:text="Change Password" android:textColor="#0B2A6F" android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="#667085" android:textSize="26sp" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="68dp" android:background="#E6ECF7" />
+
+                <LinearLayout android:id="@+id/rowNotifications" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:background="#F59E0B" android:contentDescription="Notifications" android:padding="10dp" android:src="@android:drawable/ic_popup_reminder" android:tag="circle" android:tint="#FFFFFF" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:text="Notifications" android:textColor="#0B2A6F" android:textSize="15sp" android:textStyle="bold" />
+                    <androidx.appcompat.widget.SwitchCompat android:id="@+id/swNotif" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="68dp" android:background="#E6ECF7" />
+
+                <LinearLayout android:id="@+id/rowPrefs" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:background="#2E9E6B" android:contentDescription="App Preferences" android:padding="10dp" android:src="@android:drawable/ic_menu_preferences" android:tag="circle" android:tint="#FFFFFF" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:text="App Preferences" android:textColor="#0B2A6F" android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="#667085" android:textSize="26sp" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="68dp" android:background="#E6ECF7" />
+
+                <LinearLayout android:id="@+id/rowHelp" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:background="#0B3A8F" android:contentDescription="Help and Support" android:padding="10dp" android:src="@android:drawable/ic_menu_help" android:tag="circle" android:tint="#FFFFFF" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:text="Help &amp; Support" android:textColor="#0B2A6F" android:textSize="15sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:textColor="#667085" android:textSize="26sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Logout card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="#FFFFFF"
+                android:elevation="3dp"
+                android:orientation="vertical"
+                android:tag="20">
+
+                <LinearLayout android:id="@+id/rowLogout" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="?attr/selectableItemBackground" android:clickable="true" android:focusable="true" android:gravity="center_vertical" android:orientation="horizontal" android:padding="14dp">
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:background="#E53935" android:contentDescription="Logout" android:padding="10dp" android:src="@android:drawable/ic_lock_power_off" android:tag="circle" android:tint="#FFFFFF" />
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:text="Logout" android:textColor="#E53935" android:textSize="15sp" android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom bar -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="12dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal">
+
+            <LinearLayout android:id="@+id/navHome" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:clickable="true" android:focusable="true" android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:contentDescription="Home" android:src="@android:drawable/ic_menu_myplaces" android:tint="#667085" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Home" android:textColor="#667085" android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/navStudents" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:clickable="true" android:focusable="true" android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:contentDescription="Students" android:src="@android:drawable/ic_menu_agenda" android:tint="#667085" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Students" android:textColor="#667085" android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/navGroups" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:clickable="true" android:focusable="true" android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:contentDescription="Groups" android:src="@android:drawable/ic_menu_share" android:tint="#667085" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Groups" android:textColor="#667085" android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/navLabs" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:clickable="true" android:focusable="true" android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:contentDescription="Labs" android:src="@android:drawable/ic_menu_edit" android:tint="#667085" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Labs" android:textColor="#667085" android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout android:id="@+id/navMore" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:contentDescription="More" android:src="@android:drawable/ic_menu_more" android:tint="#1E4FD8" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="More" android:textColor="#1E4FD8" android:textSize="12sp" android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

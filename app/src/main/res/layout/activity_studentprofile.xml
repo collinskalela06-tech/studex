@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6FC"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/headerBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0B3A8F"
+        android:orientation="vertical"
+        android:paddingBottom="44dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="←"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="Student Profile"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvAvatar"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:tag="circle"
+                android:text="H"
+                android:textColor="#1E4FD8"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hope Nsana"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20261234  •  Group A"
+                    android:textColor="#CFDBFF"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="-28dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Details card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:elevation="6dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:tag="20">
+
+                <!-- Tabs -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tabOverview"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_weight="1"
+                        android:background="#1E4FD8"
+                        android:gravity="center"
+                        android:text="Overview"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tabAcademic"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Academic"
+                        android:textColor="#667085" />
+                    <TextView
+                        android:id="@+id/tabAttendance"
+                        android:layout_width="0dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_weight="1"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:text="Attendance"
+                        android:textColor="#667085" />
+                </LinearLayout>
+
+                <!-- Overview -->
+                <LinearLayout
+                    android:id="@+id/blockOverview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Programme" android:textColor="#667085" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvProgramme" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingBottom="12dp" android:text="Computer Science" android:textColor="#0B2A6F" android:textSize="16sp" android:textStyle="bold" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E6ECF7" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Email" android:textColor="#667085" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvEmail" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingBottom="12dp" android:text="hope.nsana@example.com" android:textColor="#0B2A6F" android:textSize="16sp" android:textStyle="bold" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E6ECF7" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Phone" android:textColor="#667085" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvPhone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingBottom="12dp" android:text="+260 97 123 4567" android:textColor="#0B2A6F" android:textSize="16sp" android:textStyle="bold" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E6ECF7" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Status" android:textColor="#667085" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvStatus" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Active" android:textColor="#2E9E6B" android:textSize="16sp" android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Academic -->
+                <LinearLayout
+                    android:id="@+id/blockAcademic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Year of Study" android:textColor="#667085" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvYear" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingBottom="12dp" android:text="3rd Year" android:textColor="#0B2A6F" android:textSize="16sp" android:textStyle="bold" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E6ECF7" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Lab Group" android:textColor="#667085" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingBottom="12dp" android:text="Group A" android:textColor="#0B2A6F" android:textSize="16sp" android:textStyle="bold" />
+                    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E6ECF7" />
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Registration Date" android:textColor="#667085" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvRegistered" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="2025-02-15" android:textColor="#0B2A6F" android:textSize="16sp" android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Attendance -->
+                <LinearLayout
+                    android:id="@+id/blockAttendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Labs Attended" android:textColor="#667085" android:textSize="12sp" />
+                    <TextView android:id="@+id/tvLabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="8 of 10 labs" android:textColor="#0B2A6F" android:textSize="16sp" android:textStyle="bold" />
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="10dp"
+                        android:max="10"
+                        android:progress="8"
+                        android:progressBackgroundTint="#E3E9F7"
+                        android:progressTint="#1E4FD8" />
+                    <TextView android:id="@+id/tvRate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="80% attendance" android:textColor="#2E9E6B" android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="#1E4FD8"
+                android:text="+  Edit Profile"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

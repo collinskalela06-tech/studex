@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B3A8F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="←"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:contentDescription="STUDEX logo"
+            android:src="@drawable/studex_logo_cutout" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="STUDE"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"
+                android:textColor="#FF3B30"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Where Students Connect"
+            android:textColor="#CFDBFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Verify Code"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSentTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="We have sent a 6-digit code to your email. Please enter it below."
+            android:textColor="#CFDBFF" />
+
+        <!-- 6 code boxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <EditText android:id="@+id/d1" android:layout_width="0dp" android:layout_height="58dp" android:layout_margin="4dp" android:layout_weight="1" android:background="#FFFFFF" android:gravity="center" android:inputType="number" android:maxLength="1" android:textColor="#0B2A6F" android:textSize="22sp" android:textStyle="bold" />
+            <EditText android:id="@+id/d2" android:layout_width="0dp" android:layout_height="58dp" android:layout_margin="4dp" android:layout_weight="1" android:background="#FFFFFF" android:gravity="center" android:inputType="number" android:maxLength="1" android:textColor="#0B2A6F" android:textSize="22sp" android:textStyle="bold" />
+            <EditText android:id="@+id/d3" android:layout_width="0dp" android:layout_height="58dp" android:layout_margin="4dp" android:layout_weight="1" android:background="#FFFFFF" android:gravity="center" android:inputType="number" android:maxLength="1" android:textColor="#0B2A6F" android:textSize="22sp" android:textStyle="bold" />
+            <EditText android:id="@+id/d4" android:layout_width="0dp" android:layout_height="58dp" android:layout_margin="4dp" android:layout_weight="1" android:background="#FFFFFF" android:gravity="center" android:inputType="number" android:maxLength="1" android:textColor="#0B2A6F" android:textSize="22sp" android:textStyle="bold" />
+            <EditText android:id="@+id/d5" android:layout_width="0dp" android:layout_height="58dp" android:layout_margin="4dp" android:layout_weight="1" android:background="#FFFFFF" android:gravity="center" android:inputType="number" android:maxLength="1" android:textColor="#0B2A6F" android:textSize="22sp" android:textStyle="bold" />
+            <EditText android:id="@+id/d6" android:layout_width="0dp" android:layout_height="58dp" android:layout_margin="4dp" android:layout_weight="1" android:background="#FFFFFF" android:gravity="center" android:inputType="number" android:maxLength="1" android:textColor="#0B2A6F" android:textSize="22sp" android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvResend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Didn't receive the code? Resend Code"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Continue"
+            android:textColor="#0B3A8F"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
